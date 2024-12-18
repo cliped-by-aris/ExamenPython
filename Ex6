@@ -1,0 +1,9 @@
+def crear_paraula_llista(llista):
+    l = ""
+    
+    if type(llista) == str:
+        llista = llista.split(',')
+        
+    for i in llista:
+        l = l + i[0]
+    return l

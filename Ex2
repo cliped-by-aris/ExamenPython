@@ -1,0 +1,10 @@
+def senars_llista(llista):
+    l = []
+    # print(llista)
+    if type(llista) == str:
+        llista = llista.split(',')
+    # print(llista)
+    for i in list(llista):
+        if int(i) % 2 != 0:
+            l.append(int(i))
+    return l

@@ -1,0 +1,9 @@
+def majors_edat(edat1, edat2):
+    if edat1 > 17:
+        print("Edat1 es major d'edat")
+    else:
+        print("Edat1 no es major d'edat")
+    if edat2 > 17:
+        print("Edat2 es major d'edat")
+    else:
+        print("Edat2 no es major d'edat")

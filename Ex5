@@ -1,0 +1,8 @@
+def llegir_llista_paraules():
+    l = []
+    while True:
+        a = input("introdueix una paraula: ")
+        if a == ".":
+            break
+        l.append(a)
+    return l

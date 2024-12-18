@@ -1,0 +1,5 @@
+def crear_llista_num_aleatoris():
+    l = []
+    for i in range(5):
+        l.append(random.randint(1, 11))
+    return l

@@ -1,0 +1,16 @@
+def comparar_llistes(llista1, llista2):
+    l = []
+    if type(llista1) == str:
+        llista1 = llista1.split(',')
+    if type(llista2) == str:
+        llista2 = llista2.split(',')
+
+    for a, b in zip(llista1, llista2):
+        if a == b:
+            l.append(2)
+        elif b in llista1:
+            l.append(1)
+        else:
+            l.append(0)
+    
+    return l

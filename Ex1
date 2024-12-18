@@ -1,0 +1,8 @@
+def llegir_llista_enters():
+    l = []
+    while True:
+        a = input("introdueix un nombre: ")
+        if a == ".":
+            break
+        l.append(int(a))
+    return l

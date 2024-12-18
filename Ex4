@@ -1,0 +1,14 @@
+def cercar_numero_llista(llista, numero):
+    # print(llista)
+    l = []
+    if type(llista) == str:
+        llista = llista.split(',')
+    for i in llista:
+        l.append(int(i))
+        
+    if numero not in l:
+        return -1
+    else:
+        for x, i in enumerate(l):
+            if i == numero:
+                return x+1

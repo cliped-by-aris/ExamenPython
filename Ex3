@@ -1,0 +1,8 @@
+def sumar_parells_llista(llista):
+    s = 0
+    if type(llista) == str:
+        llista = llista.split(',')    
+    for i in llista:
+        if int(i) % 2 == 0:
+            s = s + int(i)
+    return s

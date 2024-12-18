@@ -1,0 +1,60 @@
+def menu():
+    start = True
+    while True:
+        if start:
+            print("Quina funcio vols ejecutar:")
+            print("1. Llegir llista d'enters")
+            print("2. Senars llista")
+            print("3. Sumar parells llista")
+            print("4. Cercar numero llista")
+            print("5. Llegir llista paraules")
+            print("6. Crear paraula de llista")
+            print("7. Crear llista de numeros aleatoris")
+            print("8. Comparar valors llistes")
+            print("9. Majors d'edat")
+            print("10. Sortir")
+            start = False
+        a = input("Introdueix una opcio: ")
+        if a == "1":
+            start = True
+            print(llegir_llista_enters())
+        if a == "2":
+            start = True
+            x = input("Introdueix una llista de nombres (1,2,3,4...): ")
+            print(senars_llista(x))
+        if a == "3":
+            start = True
+            x = input("Introdueix una llista de nombres (1,2,3,4...): ")
+            print(sumar_parells_llista(x))
+        if a == "4":
+            start = True
+            x = input("Introdueix una llista de nombres (1,2,3,4...): ")
+            y = int(input("Introdueix el numero a cercar: "))
+            print(cercar_numero_llista(x, y))
+        if a == "5":
+            start = True
+            print(llegir_llista_paraules())
+        if a == "6":
+            start = True
+            x = input("Introdueix una llista de paraules (hola,sol,casa...): ")
+            print(crear_paraula_llista(x))
+        if a == "7":
+            start = True
+            print(crear_llista_num_aleatoris())
+        if a == "8":
+            start = True
+            x = input("Introdueix una llista de nombres (1,2,3,4...): ")
+            y = input("Introdueix un altre llista de nombres (1,2,3,4...): ")
+            print(comparar_llistes(x, y))
+        if a == "9":
+            start = True
+            x = int(input("Introdueix edat1: "))
+            y = int(input("Introdueix edat2: "))
+            majors_edat(x, y)
+        if a == "10":
+            start = True
+            print("Adeu!!!")
+            break
+            
+        
+menu()
